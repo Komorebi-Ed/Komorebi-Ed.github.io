@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2891761 */
+  src: url('iconfont.woff2?t=1635336699862') format('woff2'),
+       url('iconfont.woff?t=1635336699862') format('woff'),
+       url('iconfont.ttf?t=1635336699862') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qian4:before {
+  content: "\e641";
+}
+
+.icon-huafei:before {
+  content: "\e638";
+}
+
+.icon-quanzi:before {
+  content: "\e674";
+}
+
+.icon-yinhangqia:before {
+  content: "\e936";
+}
+
+.icon-shizhong:before {
+  content: "\e64c";
+}
+
+.icon-24gf-building2:before {
+  content: "\e838";
+}
+
+.icon-shouji:before {
+  content: "\e601";
+}
+
+.icon-gongju:before {
+  content: "\e614";
+}
+
+.icon-yonghu-xianxing:before {
+  content: "\e8c8";
+}
+
+.icon-kefu:before {
+  content: "\ec2e";
+}
+
+.icon-gouwuchekong:before {
+  content: "\e600";
+}
+
+.icon-xiangyou1:before {
+  content: "\e775";
+}
+
+.icon-xiangyoujiantou:before {
+  content: "\e65f";
+}
+
+.icon-chazhao:before {
+  content: "\e642";
+}
+

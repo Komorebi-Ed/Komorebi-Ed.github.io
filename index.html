@@ -1,10 +1,183 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>page</title>
+    <title>制造知识图谱</title>
+    <!-- 导入重置样式表 -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- 导入全局样式表 -->
+    <link href="./css/base.css" rel="stylesheet">
+    <!-- 导入图片字体样式表 -->
+    <link href="./icon/iconfont.css" rel="stylesheet">
+    <!-- 设置网站的图标 -->
+    <!--<link href="./favicon.ico" rel="icon" />-->
+
+    <style>
+
+        /*body {
+            background-color: darkslategrey;
+        }*/
+
+        .header_wrapper {
+            position:fixed;
+            height: 70px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .header {
+            height: 100%;
+        }
+
+            .header .logo {
+                float: left;
+                margin-top: 5px;
+                margin-left: 10px;
+                height: 60px;
+                width: 60px;
+            }
+
+                .header .logo img {
+                    height: 100%;
+                    width: auto;
+                }
+
+            .header .about_us {
+                float: right;
+                margin-right: 50px;
+                height: 100%;
+                width: 120px;
+            }
+
+                .header .about_us a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 70px;
+                    text-align: center;
+                    color: lightslategrey;
+                    font-size: 16px;
+                }
+
+                    .header .about_us a:hover {
+                        background-color: lightgrey;
+                        color: dimgrey;
+                    }
+
+        .main_spacer{
+            width:100%;
+            height:70px;
+            background-color:red;
+        }
+
+        .main {
+            height: 650px;
+            width: 100%;
+            background-image: url("../img/cqu.png");
+            background-size: cover;
+            margin-bottom:230px;
+        }
+
+            .main .title {
+                display: flex;
+                justify-content: center;
+                margin-top:100px;
+                font-size: 73px;
+                font-family: 'Microsoft YaHei';
+                font-weight: bold;
+                color: darkslategrey;
+            }
+
+            .main .search {
+                display: flex;
+                justify-content: center;
+                margin-top: 130px;
+            }
+        /* 搜索框和搜索按钮通用样式 */
+        .search input,
+        .search button {
+            box-sizing: border-box;
+            height: 50px;
+            background-color: white;
+            border: 1px solid lightgrey;
+            margin: 0;
+            padding: 0;
+            border-radius: 25px;
+        }
+
+        .search input{
+            padding-left:20px;
+            width: 1000px;
+
+        }
+
+        .search button{
+            width: 100px;
+        }
+
+        .edit .title,
+        .introduction .title{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            font-size: 32px;
+            font-family: 'Microsoft YaHei';
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .edit .spacer,
+        .introduction .spacer{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .edit .content,
+        .introduction .content{
+            height: 500px;
+            background-color: whitesmoke;
+        }
+
+
+    </style>
+
 </head>
 <body>
-    <h1>this is a website of Ed</h1>
+    <!-- 导航栏 -->
+    <div class="header_wrapper">
+        <div class="header w">
+            <div class="logo">
+                <img src="../img/LOGO-SSS.png" alt="Alternate Text" />
+            </div>
+            <div class="about_us">
+                <a href="#intro">About us</a>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索内容 -->
+    <div class="main_spacer"></div>
+    <div class="main clearfix">
+        <div class="title">散热器生产知识图谱</div>
+        <div class="search">
+            <form action="/">
+                <input type="text" name="search_bar">
+                <button name="search_btn">
+                    <i class="iconfont">&#xe642</i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- 知识编辑 -->
+    <div class="edit">
+        <div class="title">知识编辑</div>
+        <img class="spacer" src="../img/spacer.png" alt="Alternate Text" width="230" />
+        <div class="content w"></div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="introduction" id="intro">
+        <div class="title">关于我们</div>
+        <img class="spacer" src="../img/spacer.png" alt="Alternate Text" width="230" />
+        <div class="content w"></div>
+    </div>
 </body>
 </html>
